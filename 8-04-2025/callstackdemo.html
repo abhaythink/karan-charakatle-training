@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="js" href="/8-04-2025/callstackdemo.js"> -->
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function one(){
+console.log("one")
+    two()
+}
+
+function two(){
+    console.log("two")
+    three()
+}
+function three(){
+    console.log("three")
+}
+
+one()
+two()
+three()
+    </script>
+    
+</body>
+</html>
